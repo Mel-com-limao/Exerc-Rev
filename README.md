@@ -28,8 +28,12 @@ pessoa.idade = 31;
 # Formulas
 
 let soma = 10 + 20
+
 let sub = 20 - 10
+
 let divisao = 20/2
+
 let mult = 10*2
+
 let poten = 10**2
 
