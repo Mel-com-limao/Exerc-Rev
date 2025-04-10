@@ -1,5 +1,11 @@
 # Exerc-Rev
 
+# Tipos de dados:
+
+Números
+String
+Booleanos 
+
 # Arrays
 
 # Objeto
