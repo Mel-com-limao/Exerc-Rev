@@ -2,13 +2,15 @@
 
 # Basico
 
--let = variaveis que podem ter seu valor alterado depois
--const = variaveis imutaveis, não podem ter seu valor alterado depois de iniciar
+- let = variaveis que podem ter seu valor alterado depois
+- const = variaveis imutaveis, não podem ter seu valor alterado depois de iniciar
 
 # Tipos de dados:
 
 -Números: representar valores númericos como idade, altura e preços [Ex: 10; 3.14]
+
 -String: representa texto, como nomes, endereços e mensagens. Delimitado por aspas simple e duplas [Ex: 'olá mundo',"melissa"]
+
 -Booleanos: representam valores de verdade ou falsidade. Usados para condições e comparações [Ex: true e false]
 
 # Condições:
@@ -153,6 +155,29 @@ function calculaMedia (a,b,c){
 
 calculaMedia(nota1,nota2,nota3)
 
+let nome = "Amanda"
+let idade = 25
+let bool = true
+
+console.log(typeof nome)
+console.log(typeof idade)
+console.log(typeof bool)
+
+function testeVar() {
+  if(true){
+    var x = 10
+  }
+  console.log(x)
+}
+testeVar()
+
+function testeLet() {
+  if (true){
+    var y = 20 // let y = 20 (da erro)
+  }
+  console.log(y)
+}
+testeLet() //y is not defined
 
 # Conversão de dados
 
