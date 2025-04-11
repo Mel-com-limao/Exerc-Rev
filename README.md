@@ -3,7 +3,12 @@
 # Basico
 
 - let = variaveis que podem ter seu valor alterado depois
+- 
 - const = variaveis imutaveis, não podem ter seu valor alterado depois de iniciar
+  
+- Em JavaScript, var é uma palavra-chave usada para declarar variáveis. É a forma mais antiga de declarar variáveis na linguagem. 
+
+-Escopo: Pode ser global ou de função
 
 # Tipos de dados:
 
