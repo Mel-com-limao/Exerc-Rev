@@ -116,6 +116,80 @@ const pessoa = {
 
 pessoa.idade = 31;
 
+const estudante = {
+    nome: "Melissa",
+    idade: 15,
+    prontuario: 12345,
+    bolsista: true,
+    telefones: ["1234-5678", "8765-4321"]
+}
+
+// verificar se existe a propriedade endereço
+const chaveObjeto = Object.keys(estudante)
+console.log("", chaveObjeto)
+
+if (!chaveObjeto.includes("endereco")){ // se propriedade end não existe
+    console.error("É necessário ter um endereço cadastrado") // mensagem de erro
+}else {
+    console.log("Endereço cadastrado")
+}
+
+const estudante = {
+    nome: "Vinicius",
+    idade: 15,
+    prontuario: 1234,
+    turma: "Desenvolvimento web",
+    bolsista: true,
+    telefones: ["1234-56789", "9874-84833"],
+    // endereco: [{
+    //     rua: "Nome da rua",
+    //     numero: "500",
+    //     bairro: "Santa Cruz"
+    // },
+    // {
+    //     rua: "Rua 2",
+    //     numero: "23B",
+    //     bairro: "Sabiá"
+    // }]
+}
+
+console.log(typeof estudante) //object
+console.log(estudante)
+
+//acessando propriedades do objeto
+console.log(estudante.telefones) // lista de telefones
+console.log(estudante.telefones[1])
+console.log(estudante['idade'])
+
+// estudante.endereco = {
+//     rua: "Nome da rua",
+//     numero: "500",
+//     bairro: "Santa Cruz"
+// }
+
+// console.log(estudante.endereco.rua)
+
+// criando um objeto
+let pessoa = {
+  nome: "Ana",
+  idade: 25,
+  profissao: "Engenheira"
+};
+
+// alterando a propriedade idade do objeto pessoa
+pessoa.idade = 26;
+
+
+// ou também pode ser alterado usando colchetes
+// pessoa["idade"] = 26;
+
+// removendo uma propriedade
+delete pessoa.profissao;
+
+// exibindo no console o resultado
+console.log(pessoa);
+// Resultado: { nome: 'Ana', idade: 26 }
+
 # Operadores aritméticos
 
 let soma = 10 + 20
@@ -178,6 +252,77 @@ function testeLet() {
   console.log(y)
 }
 testeLet() //y is not defined
+
+//função sem retorno
+function mensagem () {
+    console.log('Olá, mundo')
+}
+mensagem()
+
+// funcao com retorno
+function soma (a, b) {
+  return a + b
+}
+let resultado = soma(5, 6)
+console.log(resultado)
+
+console.log(soma(5, 5))
+
+// função sem parâmetro
+function mostrarHoraLocal () {
+    let hora = new Date()
+    console.log(`Hora atual: ${hora.toLocaleTimeString()}`)
+}
+
+mostrarHoraLocal()
+
+// função com parâmetro
+function cumprimentar(nome, idade){
+  console.log(`Olá, ${nome}, sua idade é ${idade}`)
+}
+
+cumprimentar('Ana', 20)
+cumprimentar('Pedro', 16)
+cumprimentar('João', 17)
+
+// funcao declarativa
+mensagem()
+
+function mensagem () {
+    console.log('Olá, mundo')
+}
+
+// funcao de expressão
+const mensagem1 = function(){
+  console.log('Olá, mundo')
+}
+mensagem1()
+
+//funcao de seta sem parâmetro ARROW FUNCTION
+const saudacao = () => 'Olá, turma'
+saudacao()
+
+//funcao de seta com parâmetro
+const saudacao1 = (nome) => `Olá, ${nome}`
+saudacao1('Laís')
+
+
+function testeVar () {
+    if (true){
+      var x = 10 //dentro do bloco
+    }
+    console.log(x)
+  }
+  testeVar() // 10
+ 
+  function testeLet () {
+    if (true){
+      let y = 20
+    }
+    console.log(y)
+  }
+  testeLet() // y is not defined
+
 
 # Conversão de dados
 
