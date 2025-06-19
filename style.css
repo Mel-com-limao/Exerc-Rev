@@ -1,0 +1,21 @@
+body {
+    background-color: lightgreen
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Menu li{
+    list-style: none ;
+}
